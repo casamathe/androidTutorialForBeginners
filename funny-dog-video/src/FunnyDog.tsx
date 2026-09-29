@@ -1,4 +1,4 @@
-import {AbsoluteFill, Sequence, interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
+import {AbsoluteFill, Audio, Sequence, staticFile, interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
 import {Dog} from './Dog';
 
 const Caption = ({text, color = '#fff'}: {text: string; color?: string}) => {
@@ -112,6 +112,7 @@ const Ending = () => {
 
 export const FunnyDog = () => (
   <AbsoluteFill>
+    <Audio src={staticFile('music.wav')} />
     <Sequence from={0} durationInFrames={75}><Intro /></Sequence>
     <Sequence from={75} durationInFrames={90}><Squirrel /></Sequence>
     <Sequence from={165} durationInFrames={90}><Zoomies /></Sequence>
