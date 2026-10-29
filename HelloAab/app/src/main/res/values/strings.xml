@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Hello AAB</string>
+    <string name="hello">Bonjour Android !</string>
+    <string name="click_me">Cliquer</string>
+    <string name="counter_format">Clics : %1$d</string>
+</resources>
