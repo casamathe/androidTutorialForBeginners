@@ -20,8 +20,12 @@ jobs:
       - uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: 8.9
-      - name: Build AAB
-        run: gradle :app:bundleRelease
+      - name: Build AAB and debug APK
+        run: gradle :app:bundleRelease :app:assembleDebug
+      - uses: actions/upload-artifact@v4
+        with:
+          name: app-debug-apk
+          path: HelloAab/app/build/outputs/apk/debug/*.apk
       - uses: actions/upload-artifact@v4
         with:
           name: app-release-aab
