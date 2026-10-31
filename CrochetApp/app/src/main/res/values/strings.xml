@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Crochet Companion</string>
+    <string name="tagline">Your pocket helper for every hook and yarn</string>
+    <string name="stitch_guide">Stitch Guide</string>
+    <string name="row_counter">Row Counter</string>
+    <string name="hook_sizes">Hook Size Chart</string>
+    <string name="rows">Rows</string>
+    <string name="stitches">Stitches in this row</string>
+    <string name="add_row">+ Row</string>
+    <string name="remove_row">- Row</string>
+    <string name="add_stitch">+ Stitch</string>
+    <string name="remove_stitch">- Stitch</string>
+    <string name="reset">Reset</string>
+    <string name="close">Close</string>
+    <string name="difficulty">Difficulty: %1$s</string>
+</resources>
